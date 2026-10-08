@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.golivemcp/golive",
+  "title": "GoLive MCP",
+  "description": "Your agents build, we help you go live: domains, DNS, email, deploys, secrets, routing and audits.",
+  "version": "0.1.0",
+  "websiteUrl": "https://golivemcp.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://golivemcp.com/mcp",
+      "headers": [
+        {
+          "name": "x-api-key",
+          "description": "GoLive API key (invite-only beta). OAuth 2.1 is also supported.",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
