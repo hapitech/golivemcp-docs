@@ -37,7 +37,11 @@ GoLive MCP is a **remote** MCP server. There is nothing to download or build.
 3. Test the connection with a read-only call:
 
    - `check_domain` with `{ "domain": "example.com" }` returns availability and price.
+   - `dashboard` with `{}` lists what needs attention on the account, worst first, each with the tool call that fixes it. Start here.
+   - To use the web console without an email link, call `console_login` with `{}` (admin key): it returns a single-use URL for the user's browser; treat it as a secret and open it right away.
    - `budget_status` with `{}` shows what may be spent (zero until an operator opens a budget).
+   - `estimate_budget` with `{ "goal": "launch my app on example.com" }` prices the whole plan and
+     says whether the account can pay for it, before anything is spent.
 
 4. Before any tool that changes something, call it with `"dry_run": true` and show the user the
    plan. Destructive and spending tools also need `"confirm"` set to the target named in the plan.
