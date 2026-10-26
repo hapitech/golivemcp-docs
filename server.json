@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "com.golivemcp/golive",
   "title": "GoLive MCP",
-  "description": "Your agents build, we help you go live: domains, DNS, email, deploys, secrets, routing and audits.",
-  "version": "0.1.0",
+  "description": "Your agents build, we help you go live: domains, DNS, email, deploys, SMS, AI models and audits.",
+  "version": "0.2.0",
   "websiteUrl": "https://golivemcp.com",
   "remotes": [
     {
